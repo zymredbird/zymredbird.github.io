@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="学习,NOIP,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Task：pj试炼场2-3T1 P1177也许你一看这道题，就会说：sort一波搞定！水炸了！大不了优先队列喽 1234567891011#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;int a[100010];int n;int main()&amp;#123;	cin&amp;gt;&amp;gt;n;	for(int i=0;i&amp;lt;n;i++)cin&amp;gt;&amp;">
+<meta name="keywords" content="学习,NOIP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NOIP2019 pj备战计划-3">
+<meta property="og:url" content="https://zymredbird.github.io/2019/08/15/NOIP2019 pj备战计划-3/index.html">
+<meta property="og:site_name" content="red bird&#39;s blog">
+<meta property="og:description" content="Task：pj试炼场2-3T1 P1177也许你一看这道题，就会说：sort一波搞定！水炸了！大不了优先队列喽 1234567891011#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;int a[100010];int n;int main()&amp;#123;	cin&amp;gt;&amp;gt;n;	for(int i=0;i&amp;lt;n;i++)cin&amp;gt;&amp;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2019/08/15/xW8yRYVwEG6hAbt.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/15/s49p5Cw37aRVoiH.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/15/AGHchf2nbQmYzEO.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/15/eWDT9dNHwl4qaxV.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/15/ExhSRNyDmc8wg4e.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/15/gC81lWiKSkRYJjr.jpg">
+<meta property="og:updated_time" content="2019-08-15T04:27:10.025Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NOIP2019 pj备战计划-3">
+<meta name="twitter:description" content="Task：pj试炼场2-3T1 P1177也许你一看这道题，就会说：sort一波搞定！水炸了！大不了优先队列喽 1234567891011#include&amp;lt;bits/stdc++.h&amp;gt;using namespace std;int a[100010];int n;int main()&amp;#123;	cin&amp;gt;&amp;gt;n;	for(int i=0;i&amp;lt;n;i++)cin&amp;gt;&amp;">
+<meta name="twitter:image" content="https://i.loli.net/2019/08/15/xW8yRYVwEG6hAbt.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://zymredbird.github.io/2019/08/15/NOIP2019 pj备战计划-3/">
+
+
+
+
+
+  <title>NOIP2019 pj备战计划-3 | red bird's blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">red bird's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">wl初二小菜鸡</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zymredbird.github.io/2019/08/15/NOIP2019 pj备战计划-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="red bird">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://i.loli.net/2019/08/02/5d43894ae9e4b75666.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="red bird's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">NOIP2019 pj备战计划-3</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-15T10:33:28+08:00">
+                2019-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Task：pj试炼场2-3"><a href="#Task：pj试炼场2-3" class="headerlink" title="Task：pj试炼场2-3"></a>Task：pj试炼场2-3</h1><h2 id="T1-P1177"><a href="#T1-P1177" class="headerlink" title="T1 P1177"></a>T1 P1177</h2><p>也许你一看这道题，就会说：sort一波搞定！水炸了！<del>大不了优先队列喽</del></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)<span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">	sort(a,a+n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)<span class="built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="string">" "</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>过了！</p>
+<p>不过，好心的出题人还说了这么一句话</p>
+<p><strong>C++选手请不要试图使用STL，虽然你可以使用sort一遍过，但是你并没有掌握快速排序算法的精髓。</strong></p>
+<p>好吧，手写快排。。。试一下吧</p>
+<a id="more"></a>
+
+<p>由于算法简单<del>不常用</del>，本人也熟悉，放几张丁爸的PPT完事</p>
+<p><img src="https://i.loli.net/2019/08/15/xW8yRYVwEG6hAbt.jpg" alt="1.JPG"></p>
+<p><img src="https://i.loli.net/2019/08/15/s49p5Cw37aRVoiH.jpg" alt="2.JPG"></p>
+<p><img src="https://i.loli.net/2019/08/15/AGHchf2nbQmYzEO.jpg" alt="3.JPG"></p>
+<p><img src="https://i.loli.net/2019/08/15/eWDT9dNHwl4qaxV.jpg" alt="4.JPG"></p>
+<p><img src="https://i.loli.net/2019/08/15/ExhSRNyDmc8wg4e.jpg" alt="5.JPG"></p>
+<p><img src="https://i.loli.net/2019/08/15/gC81lWiKSkRYJjr.jpg" alt="6.JPG"></p>
+<p><del>虽然在能用STL的比赛里没人会手写这玩意</del></p>
+<p>先简单讲讲</p>
+<p>噗，加了快读快输还是3个TLE</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> i,j,s;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> w=<span class="number">1</span>,q=<span class="number">0</span>;<span class="keyword">char</span> ch=<span class="string">' '</span>;</span><br><span class="line">    <span class="keyword">while</span>(ch!=<span class="string">'-'</span>&amp;&amp;(ch&lt;<span class="string">'0'</span>||ch&gt;<span class="string">'9'</span>))ch=getchar();</span><br><span class="line">    <span class="keyword">while</span>(ch&gt;=<span class="string">'0'</span>&amp;&amp;ch&lt;=<span class="string">'9'</span>)q=q*<span class="number">10</span>+ch-<span class="string">'0'</span>,ch=getchar();</span><br><span class="line">    <span class="keyword">return</span> w*q;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">write</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> s[<span class="number">20</span>],top=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(x)&#123;s[++top]=x%<span class="number">10</span>;x/=<span class="number">10</span>;&#125;</span><br><span class="line">    <span class="keyword">if</span>(!top)s[++top]=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(top)<span class="built_in">putchar</span>(s[top--]+<span class="string">'0'</span>);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">' '</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Sort</span><span class="params">(<span class="keyword">int</span> left,<span class="keyword">int</span> right)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(left&gt;=right)<span class="keyword">return</span>;</span><br><span class="line">	s=a[left];</span><br><span class="line">	i=left,j=right;</span><br><span class="line">	<span class="keyword">while</span>(i!=j)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span>(a[j]&gt;=s&amp;&amp;i&lt;j)j--;</span><br><span class="line">		<span class="keyword">while</span>(a[i]&lt;=s&amp;&amp;i&lt;j)i++;</span><br><span class="line">		<span class="keyword">if</span>(i&lt;j)swap(a[i],a[j]);</span><br><span class="line">	&#125;</span><br><span class="line">	a[left]=a[i];</span><br><span class="line">	a[i]=s;</span><br><span class="line">	Sort(left,i<span class="number">-1</span>);</span><br><span class="line">	Sort(i+<span class="number">1</span>,right);</span><br><span class="line">	 </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)a[i]=read();</span><br><span class="line">	Sort(<span class="number">1</span>,n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)write(a[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>看来传统快排是不行了</p>
+<p>那就来几个小优化？</p>
+<p>多次试验后，我是这么做的：</p>
+<p>1.把swap换成手写赋值（STL慢啊）</p>
+<p>2.随机化（玄学）</p>
+<p>3.加入一些插入排序（这个是看题解的）</p>
+<p>额。。。还是T了一个点</p>
+<p>辣么。。。</p>
+<p><strong>二分？</strong></p>
+<p>其实就是把基准数定在中间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int a[100010];</span><br><span class="line">int n;</span><br><span class="line">int i,j,s,tmp,ra;</span><br><span class="line">int read()</span><br><span class="line">&#123;</span><br><span class="line">    int w=1,q=0;char ch=&apos; &apos;;</span><br><span class="line">    while(ch!=&apos;-&apos;&amp;&amp;(ch&lt;&apos;0&apos;||ch&gt;&apos;9&apos;))ch=getchar();</span><br><span class="line">    while(ch&gt;=&apos;0&apos;&amp;&amp;ch&lt;=&apos;9&apos;)q=q*10+ch-&apos;0&apos;,ch=getchar();</span><br><span class="line">    return w*q;</span><br><span class="line">&#125;</span><br><span class="line">int write(int x)</span><br><span class="line">&#123;</span><br><span class="line">    int s[20],top=0;</span><br><span class="line">    while(x)&#123;s[++top]=x%10;x/=10;&#125;</span><br><span class="line">    if(!top)s[++top]=0;</span><br><span class="line">    while(top)putchar(s[top--]+&apos;0&apos;);</span><br><span class="line">    putchar(&apos; &apos;);</span><br><span class="line">&#125;</span><br><span class="line">void Sort(int left,int right)</span><br><span class="line">&#123;</span><br><span class="line">	i=left,j=right;</span><br><span class="line">	s=a[(left+right)/2];</span><br><span class="line">	while(i&lt;=j)</span><br><span class="line">	&#123;</span><br><span class="line">		while(a[j]&gt;s)j--;</span><br><span class="line">		while(a[i]&lt;s)i++;</span><br><span class="line">		if(i&lt;=j)tmp=a[i],a[i]=a[j],a[j]=tmp,i++,j--;</span><br><span class="line">	&#125;</span><br><span class="line">	if(left&lt;j)Sort(left,j);</span><br><span class="line">	if(i&lt;right)Sort(i,right);</span><br><span class="line">	 </span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	n=read();</span><br><span class="line">	for(int i=0;i&lt;n;i++)a[i]=read();</span><br><span class="line">	Sort(0,n-1);</span><br><span class="line">	for(int i=0;i&lt;n;i++)write(a[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="T2-P1059"><a href="#T2-P1059" class="headerlink" title="T2 P1059"></a>T2 P1059</h2><p>红题，水，set自带去重和排序</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt; s;</span><br><span class="line"><span class="keyword">int</span> n,a;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">while</span>(n--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;a;</span><br><span class="line">		s.insert(a);</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;s.size()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">while</span>(s.size())</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;*s.begin()&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">		s.erase(s.begin());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="T3-P1068"><a href="#T3-P1068" class="headerlink" title="T3 P1068"></a>T3 P1068</h2><p>还是水题，结构体排序即可</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	<span class="keyword">int</span> number,score;</span><br><span class="line">&#125;p[<span class="number">5005</span>];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(node x,node y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(x.score!=y.score)<span class="keyword">return</span> x.score&gt;y.score;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> x.number&lt;y.number;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a;i++)<span class="built_in">cin</span>&gt;&gt;p[i].number&gt;&gt;p[i].score;</span><br><span class="line">	<span class="keyword">int</span> m=<span class="built_in">floor</span>(b*<span class="number">1.5</span>);</span><br><span class="line">	sort(p,p+a,cmp);</span><br><span class="line">	<span class="keyword">int</span> S=p[m<span class="number">-1</span>].score;</span><br><span class="line">	<span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a;i++)</span><br><span class="line">		<span class="keyword">if</span>(p[i].score&gt;=S)sum++;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;S&lt;&lt;<span class="string">" "</span>&lt;&lt;sum&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a;i++)</span><br><span class="line">		<span class="keyword">if</span>(p[i].score&gt;=S)<span class="built_in">cout</span>&lt;&lt;p[i].number&lt;&lt;<span class="string">" "</span>&lt;&lt;p[i].score&lt;&lt;<span class="built_in">endl</span>; </span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="T4-P1781"><a href="#T4-P1781" class="headerlink" title="T4 P1781"></a>T4 P1781</h2><p>还是水题，坑点只有票数很大，用字符串就ok了</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">string</span> point,maxx=<span class="string">" "</span>;</span><br><span class="line"><span class="keyword">int</span> n,ans;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;point;</span><br><span class="line">		<span class="keyword">if</span>(point.size()&gt;maxx.size()||(point.size()==maxx.size()&amp;&amp;point&gt;maxx))</span><br><span class="line">		&#123;</span><br><span class="line">			maxx=point;</span><br><span class="line">			ans=i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;maxx&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"># 学习</a>
+          
+            <a href="/tags/NOIP/" rel="tag"># NOIP</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/14/NOIP2019 pj备战计划-2/" rel="next" title="NOIP2019 pj备战计划-2">
+                <i class="fa fa-chevron-left"></i> NOIP2019 pj备战计划-2
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NTc4Ny8yMjI5OA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://i.loli.net/2019/08/02/5d43894ae9e4b75666.jpg" alt="red bird">
+            
+              <p class="site-author-name" itemprop="name">red bird</p>
+              <p class="site-description motion-element" itemprop="description">Welcome!</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Task：pj试炼场2-3"><span class="nav-number">1.</span> <span class="nav-text">Task：pj试炼场2-3</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#T1-P1177"><span class="nav-number">1.1.</span> <span class="nav-text">T1 P1177</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#T2-P1059"><span class="nav-number">1.2.</span> <span class="nav-text">T2 P1059</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#T3-P1068"><span class="nav-number">1.3.</span> <span class="nav-text">T3 P1068</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#T4-P1781"><span class="nav-number">1.4.</span> <span class="nav-text">T4 P1781</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">red bird</span>
+
+  
+</div>
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
