@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="搜索专题 T1 胜利大逃亡一个普通的三维BFS，基本上模板即可 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576#include&amp;lt;bits/stdc++.h">
+<meta name="description" content="搜索专题，略微有一点难度">
 <meta name="keywords" content="学习,NOIP,BFS,DFS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="杭电pj备战专题-2">
 <meta property="og:url" content="https://zymredbird.github.io/2019/08/21/杭电pj备战专题-2/index.html">
 <meta property="og:site_name" content="red bird&#39;s blog">
-<meta property="og:description" content="搜索专题 T1 胜利大逃亡一个普通的三维BFS，基本上模板即可 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576#include&amp;lt;bits/stdc++.h">
+<meta property="og:description" content="搜索专题，略微有一点难度">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-21T13:45:27.273Z">
+<meta property="og:updated_time" content="2019-08-21T13:47:54.677Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="杭电pj备战专题-2">
-<meta name="twitter:description" content="搜索专题 T1 胜利大逃亡一个普通的三维BFS，基本上模板即可 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576#include&amp;lt;bits/stdc++.h">
+<meta name="twitter:description" content="搜索专题，略微有一点难度">
 
 
 
@@ -314,6 +314,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -341,11 +363,11 @@
       
 
       
-        <p>搜索专题</p>
+        <p>搜索专题，略微有一点难度</p>
+<a id="more"></a>
+
 <h1 id="T1-胜利大逃亡"><a href="#T1-胜利大逃亡" class="headerlink" title="T1 胜利大逃亡"></a><a href="http://acm.hdu.edu.cn/diy/contest_showproblem.php?pid=1001&cid=35564&problem=Problem%20%20A" target="_blank" rel="noopener">T1 胜利大逃亡</a></h1><p>一个普通的三维BFS，基本上模板即可</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> K,p;</span><br><span class="line"><span class="keyword">int</span> a,b,c,T;</span><br><span class="line"><span class="keyword">int</span> ans;</span><br><span class="line"><span class="keyword">int</span> nx,ny,nz;</span><br><span class="line"><span class="keyword">int</span> val[<span class="number">100</span>][<span class="number">100</span>][<span class="number">100</span>];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">dir</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	<span class="keyword">int</span> fx,fy,fz;</span><br><span class="line">&#125;d[<span class="number">10</span>]=&#123;&#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>&#125;,&#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">-1</span>&#125;,&#123;<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>&#125;,&#123;<span class="number">-1</span>,<span class="number">0</span>,<span class="number">0</span>&#125;,&#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">0</span>&#125;,&#123;<span class="number">0</span>,<span class="number">-1</span>,<span class="number">0</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	<span class="keyword">int</span> x,y,z,step;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">bfs</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">queue</span>&lt;node&gt; q;</span><br><span class="line">	node a1;</span><br><span class="line">	a1.x=a1.y=a1.z=<span class="number">1</span>;</span><br><span class="line">	a1.step=<span class="number">0</span>;</span><br><span class="line">	q.push(a1);</span><br><span class="line">	val[<span class="number">1</span>][<span class="number">1</span>][<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(q.size())</span><br><span class="line">	&#123;</span><br><span class="line">		node b1=q.front();</span><br><span class="line">		q.pop();</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">6</span>;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			nx=b1.x+d[i].fx;</span><br><span class="line">			ny=b1.y+d[i].fy;</span><br><span class="line">			nz=b1.z+d[i].fz;</span><br><span class="line">			<span class="keyword">if</span>(!val[nx][ny][nz])</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span>(nx==a&amp;&amp;ny==b&amp;&amp;nz==c)</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="keyword">return</span> ++b1.step;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span>(b1.step&lt;T)</span><br><span class="line">				&#123;</span><br><span class="line">					val[nx][ny][nz]=<span class="number">1</span>;</span><br><span class="line">					node c1;</span><br><span class="line">					c1.x=nx;</span><br><span class="line">					c1.y=ny;</span><br><span class="line">					c1.z=nz;</span><br><span class="line">					c1.step=b1.step+<span class="number">1</span>;</span><br><span class="line">					q.push(c1);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;K);</span><br><span class="line">	<span class="keyword">while</span>(K--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">memset</span>(val,<span class="number">1</span>,<span class="keyword">sizeof</span>(val));</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>,&amp;a,&amp;b,&amp;c,&amp;T);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=a;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=b;j++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">1</span>;k&lt;=c;k++)</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;val[i][j][k]);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		ans=bfs();</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
 
 <h1 id="T2-拯救公主"><a href="#T2-拯救公主" class="headerlink" title="T2 拯救公主"></a><a href="http://acm.hdu.edu.cn/diy/contest_showproblem.php?pid=1002&cid=35564&problem=Problem%20%20B" target="_blank" rel="noopener">T2 拯救公主</a></h1><p>类似于模板，把关于传输机的想清楚就行</p>
 <p><strong>坑点：如果其实走到了一个时空传输机，而它的对应位置还是传输机，就会卡在里面！</strong></p>
