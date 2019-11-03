@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="%拟赛开学惯例，水题大赛，基本红题难度，不想放 单调队列poj 2823思路，懒得打字，就复制了一段 1但其实我们的移动也是有规律可循的，每次只向后移动一个数字，所以，我们在前一个区间内找到的最大值，首先判断一下是否还存在于当前区间，如果不存在那么就直接将该数字删除就好了，然后还有一个新的数字进入栈，看一下他是否是最大或最小。在找最小值的时候，我们每进入一个区间，首先要判断当前栈中的元素个数，首先">
+<meta name="description" content="单调队列poj 2823思路，懒得打字，就复制了一段 1但其实我们的移动也是有规律可循的，每次只向后移动一个数字，所以，我们在前一个区间内找到的最大值，首先判断一下是否还存在于当前区间，如果不存在那么就直接将该数字删除就好了，然后还有一个新的数字进入栈，看一下他是否是最大或最小。在找最小值的时候，我们每进入一个区间，首先要判断当前栈中的元素个数，首先保证要长度是k-1，因为后面还要插入一个新的数字">
 <meta name="keywords" content="学习,CSP,单调队列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="517pj训练-1">
 <meta property="og:url" content="https://zymredbird.github.io/2019/09/07/517pj训练-1/index.html">
 <meta property="og:site_name" content="red bird&#39;s blog">
-<meta property="og:description" content="%拟赛开学惯例，水题大赛，基本红题难度，不想放 单调队列poj 2823思路，懒得打字，就复制了一段 1但其实我们的移动也是有规律可循的，每次只向后移动一个数字，所以，我们在前一个区间内找到的最大值，首先判断一下是否还存在于当前区间，如果不存在那么就直接将该数字删除就好了，然后还有一个新的数字进入栈，看一下他是否是最大或最小。在找最小值的时候，我们每进入一个区间，首先要判断当前栈中的元素个数，首先">
+<meta property="og:description" content="单调队列poj 2823思路，懒得打字，就复制了一段 1但其实我们的移动也是有规律可循的，每次只向后移动一个数字，所以，我们在前一个区间内找到的最大值，首先判断一下是否还存在于当前区间，如果不存在那么就直接将该数字删除就好了，然后还有一个新的数字进入栈，看一下他是否是最大或最小。在找最小值的时候，我们每进入一个区间，首先要判断当前栈中的元素个数，首先保证要长度是k-1，因为后面还要插入一个新的数字">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-07T13:16:43.181Z">
+<meta property="og:updated_time" content="2019-11-03T03:00:51.829Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="517pj训练-1">
-<meta name="twitter:description" content="%拟赛开学惯例，水题大赛，基本红题难度，不想放 单调队列poj 2823思路，懒得打字，就复制了一段 1但其实我们的移动也是有规律可循的，每次只向后移动一个数字，所以，我们在前一个区间内找到的最大值，首先判断一下是否还存在于当前区间，如果不存在那么就直接将该数字删除就好了，然后还有一个新的数字进入栈，看一下他是否是最大或最小。在找最小值的时候，我们每进入一个区间，首先要判断当前栈中的元素个数，首先">
+<meta name="twitter:description" content="单调队列poj 2823思路，懒得打字，就复制了一段 1但其实我们的移动也是有规律可循的，每次只向后移动一个数字，所以，我们在前一个区间内找到的最大值，首先判断一下是否还存在于当前区间，如果不存在那么就直接将该数字删除就好了，然后还有一个新的数字进入栈，看一下他是否是最大或最小。在找最小值的时候，我们每进入一个区间，首先要判断当前栈中的元素个数，首先保证要长度是k-1，因为后面还要插入一个新的数字">
 
 
 
@@ -363,8 +363,7 @@
       
 
       
-        <h1 id="拟赛"><a href="#拟赛" class="headerlink" title="%拟赛"></a>%拟赛</h1><p>开学惯例，水题大赛，基本红题难度，不想放</p>
-<h1 id="单调队列"><a href="#单调队列" class="headerlink" title="单调队列"></a>单调队列</h1><h2 id="poj-2823"><a href="#poj-2823" class="headerlink" title="poj 2823"></a><a href="https://vjudge.net/contest/324755#problem/A" target="_blank" rel="noopener">poj 2823</a></h2><p>思路，懒得打字，就复制了一段</p>
+        <h1 id="单调队列"><a href="#单调队列" class="headerlink" title="单调队列"></a>单调队列</h1><h2 id="poj-2823"><a href="#poj-2823" class="headerlink" title="poj 2823"></a><a href="https://vjudge.net/contest/324755#problem/A" target="_blank" rel="noopener">poj 2823</a></h2><p>思路，懒得打字，就复制了一段</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">但其实我们的移动也是有规律可循的，每次只向后移动一个数字，所以，我们在前一个区间内找到的最大值，首先判断一下是否还存在于当前区间，如果不存在那么就直接将该数字删除就好了，然后还有一个新的数字进入栈，看一下他是否是最大或最小。在找最小值的时候，我们每进入一个区间，首先要判断当前栈中的元素个数，首先保证要长度是k-1，因为后面还要插入一个新的数字，然后判断前面有没有比他大的，如果有的话，那么就把那个大的数字出栈，到最后让当前数字入栈，这样保证维护一个递增的栈，那么头上的数字永远是位于区间内的最小值，最大值的求解也是一样的道理。下面就是具体的代码实现了。</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,q[<span class="number">1000005</span>],head,tail,a[<span class="number">1000005</span>];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">char</span> c=getchar();</span><br><span class="line">    <span class="keyword">while</span>(c&gt;<span class="string">'9'</span>||c&lt;<span class="string">'0'</span>) &#123;<span class="keyword">if</span>(c==<span class="string">'-'</span>) f=<span class="number">-1</span>;c=getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span>&amp;&amp;c&lt;=<span class="string">'9'</span>) &#123;x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+c-<span class="string">'0'</span>; c=getchar();&#125;</span><br><span class="line">    <span class="keyword">return</span> x*f;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    n=read(),m=read();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)a[i]=read();</span><br><span class="line">    q[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail&amp;&amp;a[i]&lt;=a[q[tail]])tail--;</span><br><span class="line">        tail++;</span><br><span class="line">        q[tail]=i;</span><br><span class="line">        <span class="keyword">while</span>(q[tail]-q[head]&gt;=m)head++;</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=m)<span class="built_in">cout</span>&lt;&lt;a[q[head]]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">memset</span>(q,<span class="number">0</span>,<span class="keyword">sizeof</span>(q));</span><br><span class="line">    head=tail=<span class="number">0</span>;</span><br><span class="line">    q[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail&amp;&amp;a[i]&gt;=a[q[tail]])tail--;</span><br><span class="line">        tail++;</span><br><span class="line">        q[tail]=i;</span><br><span class="line">        <span class="keyword">while</span>(q[tail]-q[head]&gt;=m)head++;</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=m)<span class="built_in">cout</span>&lt;&lt;a[q[head]]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -499,7 +498,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -521,7 +520,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -554,7 +553,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#拟赛"><span class="nav-number">1.</span> <span class="nav-text">%拟赛</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#单调队列"><span class="nav-number">2.</span> <span class="nav-text">单调队列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#poj-2823"><span class="nav-number">2.1.</span> <span class="nav-text">poj 2823</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#单调队列"><span class="nav-number">1.</span> <span class="nav-text">单调队列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#poj-2823"><span class="nav-number">1.1.</span> <span class="nav-text">poj 2823</span></a></li></ol></li></ol></div>
             
 
           </div>
